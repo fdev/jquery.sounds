@@ -10,7 +10,7 @@ When minified the plugin is a mere **805 bytes**.
 ## Browser support
 
 This plugin works on browsers supporting `Audio`.
-A [http://caniuse.com/#feat=audio](list of compatible browsers) is available on caniuse.com.
+A [list of compatible browsers](http://caniuse.com/#feat=audio) is available on caniuse.com.
 
 The plugin doesn't provide any fallback if the `Audio` object is not available, or if it doesn't support the configured mimetype.
 
