@@ -53,14 +53,14 @@ $.sounds.play('click')
 ## Settings
 
 
-Setting       | Default      | Description
-------------- | ------------ | -----------
-sounds        | []           | List of sound names, without path and extension.
-path          | ''           | Path where sound files, for example `'sounds/'`.
-extension     | '.mp3'       | Extension of the sound files.
-mimetype      | 'audio/mpeg' | The mimetype of the sound files. Used to determine browser support.
-volume        | 0.5          | Default volume of all sounds when played (0.0-1.0).
-preload       | true         | If true all sounds will be preloaded.
+Setting       | Default        | Description
+------------- | -------------- | -----------
+sounds        | `[]`           | List of sound names, without path and extension.
+path          | `''`           | Path where sound files, for example `'sounds/'`.
+extension     | `'.mp3'`       | Extension of the sound files.
+mimetype      | `'audio/mpeg'` | The mimetype of the sound files. Used to determine browser support.
+volume        | `0.5`          | Default volume of all sounds when played (0.0-1.0).
+preload       | `true`         | If true all sounds will be preloaded.
 
 
 ## Methods
