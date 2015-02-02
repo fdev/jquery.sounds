@@ -11,7 +11,7 @@
 	function checkSupport() {
 		if (typeof Audio !== "function" && typeof Audio !== "object")
 			return false
-		var mpeg = new Audio().canPlayType(settings.mimetype)
+		var mpeg = new Audio().canPlayType(settings ? settings.mimetype : 'audio/mpeg')
 		if (mpeg != "probably" && mpeg != "maybe")
 			return false
 		return true
@@ -29,7 +29,7 @@
 
 		supported = checkSupport()
 		if (!supported)
-			return console.error('Your browser does not support playback of ' + settings.mimetype + '.')
+			return console.warn('No audio support.')
 
 		sounds = {}
 		for (var i = 0; i != settings.sounds.length; ++i) {

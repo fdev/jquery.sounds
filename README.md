@@ -5,7 +5,7 @@ A tiny jQuery plugin for playing sounds.
 ## Description
 
 The purpose of this plugin is to provide basic sound playback functionality with a tiny footprint.
-When minified the plugin is a mere 907 bytes (**521 bytes** when gzipped).
+When minified the plugin is a mere 881 bytes (**505 bytes** when gzipped).
 
 ## Browser support
 
@@ -100,6 +100,7 @@ Returns `true` when sound playback will [probably](http://www.w3.org/TR/html51/e
 
 ## Changelog
 
+* 1.0.2 Bugfix: `support` method now also works before initialization.
 * 1.0.1 Added `support` method.
 * 1.0.0 Initial release.
 
