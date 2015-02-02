@@ -1,5 +1,5 @@
 /**
- * jquery.sounds v1.0.1
+ * jquery.sounds v1.0.2
  * https://github.com/fdev/jquery.sounds
  *
  * © 2015 Folkert de Vries <info@fdev.nl>
