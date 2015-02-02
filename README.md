@@ -5,7 +5,7 @@ A tiny jQuery plugin for playing sounds.
 ## Description
 
 The purpose of this plugin is to provide basic sound playback functionality with a tiny footprint.
-When minified the plugin is a mere **805 bytes**.
+When minified the plugin is a mere 907 bytes (**521 bytes** when gzipped).
 
 ## Browser support
 
@@ -13,6 +13,7 @@ This plugin works on browsers supporting `Audio`.
 A [list of compatible browsers](http://caniuse.com/#feat=audio) is available on caniuse.com.
 
 The plugin doesn't provide any fallback if the `Audio` object is not available, or if it doesn't support the configured mimetype.
+Any method calls will fail silently, so there's no need to check for support in your code.
 
 ## Dependencies
 
@@ -92,4 +93,13 @@ $.sounds.mute(true)
 // Turn them back on
 $.sounds.mute(false)
 ```
+
+### $.sounds.support()
+
+Returns `true` when sound playback will [probably](http://www.w3.org/TR/html51/embedded-content.html#dom-navigator-canplaytype) work.
+
+## Changelog
+
+* 1.0.1 Added `support` method.
+* 1.0.0 Initial release.
 

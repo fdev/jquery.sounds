@@ -1,5 +1,5 @@
 /**
- * jquery.sounds v1.0.0
+ * jquery.sounds v1.0.1
  * https://github.com/fdev/jquery.sounds
  *
  * © 2015 Folkert de Vries <info@fdev.nl>
@@ -41,6 +41,12 @@
 			sound.volume = settings.volume
 			sounds[name] = sound
 		}
+	}
+
+	$.sounds.support = function() {
+		if (typeof supported === 'undefined')
+			supported = checkSupport()
+		return supported
 	}
 
 	$.sounds.play = function(name, volume) {
